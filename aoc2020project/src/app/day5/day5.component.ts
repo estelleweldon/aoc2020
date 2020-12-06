@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {hasRequireCalls} from "@angular/compiler-cli/ngcc/src/dependencies/commonjs_dependency_host";
 
 export class TreeNode {
   leftNode: TreeNode = null;
