@@ -4,7 +4,7 @@ import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-day1',
   templateUrl: './day1.component.html',
-  styleUrls: ['./day1.component.css']
+  styleUrls: []
 })
 export class Day1Component implements OnInit {
 
@@ -15,7 +15,7 @@ export class Day1Component implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('app/day1/day1.input', { responseType: 'text'}).subscribe((data: any) => {
+    this.http.get('app/day1/day4.input', { responseType: 'text'}).subscribe((data: any) => {
       this.inputData = data.split("\n").map(x=>+x);
       console.log("inputData = ", this.inputData)
       this.doPart1();
